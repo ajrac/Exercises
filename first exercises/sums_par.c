@@ -14,13 +14,13 @@ typedef struct arg_data {
     int end;
 } arg_data;
 
-// array which will be summed
+//array which will be summed
 static int* arr;
 
-// sum variable that will store the total sum
+//sum variable that will store the total sum
 static long long int sum = 0;
 
-// Mutex for sum
+//Mutex for sum
 pthread_mutex_t sum_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 void* worker_sum(void* arg) {
