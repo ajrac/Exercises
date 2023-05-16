@@ -26,14 +26,14 @@ int main() {
 
     start = clock();
 
-    // Summing code here
+    //Summing code here
 
     for (int i = 0; i < MAX_NO_OF_ELEMENTS; i++)
         sum += arr[i];
 
     end = clock();
     
-    // Time calculations here
+    //Time calculations here
     cpu_time_taken = ((double) (end - start)) / CLOCKS_PER_SEC;
 
     printf("Total sum: %lld\n", sum);
